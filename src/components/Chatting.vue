@@ -12,7 +12,7 @@
 <script>
 import { ref, onMounted } from 'vue';
 import SockJS from 'sockjs-client';
-import Stomp from 'stompjs';
+import { Stomp } from '@stomp/stompjs';
   
 export default {
     setup() {

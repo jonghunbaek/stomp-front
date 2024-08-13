@@ -1,21 +1,25 @@
 <template>
-  <div id="app">
-    <HelloWorld />
-  </div>
+	<main id="main">
+			<RouterView></RouterView>
+	</main>
 </template>
 
 <script>
-import HelloWorld from './components/Chatting.vue';
+import { RouterLink, RouterView} from 'vue-router';
 
 export default {
-  components: {
-    Chatting,
+  components: { 
+    RouterView, RouterLink 
   },
+
+  setup() {
+    return {};
+  }
 };
 </script>
 
 <style>
-#app {
+#main {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -24,3 +28,4 @@ export default {
   margin-top: 60px;
 }
 </style>
+
