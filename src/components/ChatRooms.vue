@@ -5,7 +5,7 @@
                 <h1>채팅방 목록</h1>
             </div>
             <div class="col-6">
-                <button class="btn btn-primary" @click="goToCreateRoom">채팅방 생성</button>
+                <button class="btn btn-light" @click="goToCreateRoom"><b>채팅방 생성</b></button>
             </div>
         </div>
         <table class="table">
